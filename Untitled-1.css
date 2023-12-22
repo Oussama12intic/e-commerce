@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&family=Rubik:ital,wght@0,300;0,700;1,400&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+body{
+    margin: 10px 80px;
+   
+    
+
+}
+.head{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.head .logo{
+    display: flex;
+}
+.head .logo .menu{
+    display: none;
+}
+.head ul{
+    display: flex;
+    margin: 0px 50px;
+    list-style: none;
+}
+.head ul li{
+    
+    margin: 0px 10px;
+}
+.head ul button{
+    display: none;
+
+}
+.head ul li a{
+    text-decoration: none;
+    color: hsl(219, 9%, 45%);
+    padding: 15px;
+    transition: 1s;
+}
+.head ul li a:hover{
+    border-bottom: 1px solid hsl(219, 9%, 45%);
+}
+.head svg{
+    margin: 5px 15px;
+}
+.content{
+    
+    width: 80%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "imgs content2";
+    margin: 60px auto;
+    gap: 50px;
+
+}
+.content .imgs{
+    grid-area: imgs;
+}
+.content .content2{
+    grid-area: content2;
+    padding: 30px 0;
+}
+.content .imgs img{
+    width: 100%;
+   
+    border-radius: 10px;
+
+}
+.content .imgs .simgs{
+    width: 100% ;
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+   
+}
+.content .imgs .simgs img{
+    width: 20%;
+    height: 100px;
+    
+}
+.content .imgs .simgs img:hover{
+    opacity: 0.5;
+    cursor: pointer;
+    border: 2px orange solid;
+}
+.add{
+    margin: 10px 0;
+    cursor: pointer;
+}
+
+@media (max-width: 768px){
+    body{
+        margin: 0px;
+    }
+    .head .logo .menu{
+        display: block;
+    }
+    .head ul{
+        margin: 0;
+       display: none;
+       flex-direction: column;
+        list-style: none;
+        height: 100%;
+        background-color: white;
+        z-index: 3;
+        position: absolute;
+    }
+    .head ul li{
+        padding: 20px;
+        
+    }
+    .head ul button{
+        display: block;
+        border: none;
+        cursor: pointer;
+        background-color: white;
+
+    }
+    .content{
+    
+        width: 98%;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-areas: "imgs""content2";
+        margin: 60px auto;
+        gap: 50px;
+    
+    }
+
+    .footer{
+        display: flex;
+        flex-direction: column;
+    }
+    .footer button{
+        cursor: pointer;
+    }
+  
+
+    .footer .buttons button{
+        width: 30%;
+       
+    }
+    .footer .add{
+        width: 100%;
+        margin: 30px auto;
+    }
+ 
+    .price{
+        width: 100%;
+        margin: 20px 0;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+
+
+
+}
+
+
+
